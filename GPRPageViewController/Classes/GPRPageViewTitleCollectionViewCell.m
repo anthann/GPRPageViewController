@@ -52,6 +52,13 @@
     [self updateTitle];
 }
 
+- (void)setIndicatorHeight:(CGFloat)indicatorHeight {
+    _indicatorHeight = indicatorHeight;
+    [self.indicatorView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(indicatorHeight);
+    }];
+}
+
 - (void)updateTitle {
     if (!self.title) {
         return;

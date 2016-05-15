@@ -91,6 +91,7 @@ NSString * const titleCellReuseIdentifier = @"titleCellReuseIdentifier";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GPRPageViewTitleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:titleCellReuseIdentifier forIndexPath:indexPath];
+    cell.indicatorHeight = self.indicatorHeight;
     cell.selectedIndicatorColor = self.selectedIndicatorColor;
     cell.titleTextAttributes = self.titleTextAttributes;
     cell.selectedTitleTextAttributes = self.selectedTitleTextAttributes;

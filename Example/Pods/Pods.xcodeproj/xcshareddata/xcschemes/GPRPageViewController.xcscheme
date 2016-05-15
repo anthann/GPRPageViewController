@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9A0D5FA0B00123838CF42959'
+               BlueprintIdentifier = '676DC466D015098FF47526FC'
                BlueprintName = 'GPRPageViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'GPRPageViewController.framework'>

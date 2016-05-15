@@ -1,8 +1,8 @@
 {
   "name": "GPRPageViewController",
   "version": "0.1.0",
-  "summary": "A short description of GPRPageViewController.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A pageViewController with a nice titleBar on the top.",
+  "description": "This is a encapsu of UIPageViewController, which provide a nice titleBar (like scrollable segmented control) on the top.  \nBy add this viewController as childViewController and implement the delegate of it, it will takes every thing for you.",
   "homepage": "https://github.com/anthann/GPRPageViewController",
   "license": "MIT",
   "authors": {
@@ -16,7 +16,7 @@
     "ios": "8.0"
   },
   "source_files": "GPRPageViewController/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
+  "public_header_files": "GPRPageViewController/Classes/*.h",
   "dependencies": {
     "Masonry": [
       "~> 1.0.0"
