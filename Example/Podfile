@@ -3,9 +3,4 @@ use_frameworks!
 target 'GPRPageViewController_Example' do
   pod 'GPRPageViewController', :path => '../'
 
-  target 'GPRPageViewController_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

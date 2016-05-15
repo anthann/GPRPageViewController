@@ -1,0 +1,6 @@
+framework module Pods_GPRPageViewController_Example {
+  umbrella header "Pods-GPRPageViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

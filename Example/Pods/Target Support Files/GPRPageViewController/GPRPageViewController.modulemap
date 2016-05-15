@@ -1,0 +1,6 @@
+framework module GPRPageViewController {
+  umbrella header "GPRPageViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

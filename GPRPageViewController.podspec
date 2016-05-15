@@ -36,7 +36,8 @@ TODO: Add long description of the pod here.
   #   'GPRPageViewController' => ['GPRPageViewController/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry', '~> 1.0.0'
 end
