@@ -23,6 +23,7 @@
 @property (copy, nonatomic) NSDictionary *titleTextAttributes;
 @property (copy, nonatomic) NSDictionary *selectedTitleTextAttributes;
 @property (strong, nonatomic) UIColor *selectedIndicatorColor;
+@property (strong, nonatomic) UIColor *titleBarBackgroundColor;
 @property (assign, nonatomic) CGFloat indicatorHeight;
 @property (assign, nonatomic) CGFloat titleBarHeight;
 

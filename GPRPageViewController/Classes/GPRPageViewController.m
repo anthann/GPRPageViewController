@@ -26,20 +26,28 @@ NSString * const titleCellReuseIdentifier = @"titleCellReuseIdentifier";
 
 @implementation GPRPageViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _indicatorHeight = 3.0;
+        _titleBarHeight = 40.0;
+        _titleBarBackgroundColor = [UIColor clearColor];
+        _selectedIndicatorColor = [UIColor blueColor];
+        _titleTextAttributes = @{
+                                 NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote],
+                                 NSForegroundColorAttributeName: [UIColor grayColor]
+                                 };
+        _selectedTitleTextAttributes = @{
+                                         NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote],
+                                         NSForegroundColorAttributeName: [UIColor blueColor]
+                                         };
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _indicatorHeight = 3.0;
-    _titleBarHeight = 40.0;
-    _selectedIndicatorColor = [UIColor blueColor];
-    _titleTextAttributes = @{
-                             NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote],
-                             NSForegroundColorAttributeName: [UIColor grayColor]
-                             };
-    _selectedTitleTextAttributes = @{
-                                     NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote],
-                                     NSForegroundColorAttributeName: [UIColor blueColor]
-                                     };
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupViews];
 }
@@ -62,7 +70,7 @@ NSString * const titleCellReuseIdentifier = @"titleCellReuseIdentifier";
     collectionView.showsHorizontalScrollIndicator = NO;
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.bounces = NO;
-    collectionView.backgroundColor = [UIColor clearColor];
+    collectionView.backgroundColor = _titleBarBackgroundColor;
     collectionView.delegate = self;
     collectionView.dataSource = self;
     [collectionView registerClass:[GPRPageViewTitleCollectionViewCell class] forCellWithReuseIdentifier:titleCellReuseIdentifier];

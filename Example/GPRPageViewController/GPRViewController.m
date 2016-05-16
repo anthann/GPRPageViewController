@@ -31,6 +31,12 @@
 
 - (void)setupViews {
     GPRPageViewController *pageViewController = [GPRPageViewController new];
+    pageViewController.titleBarBackgroundColor = [UIColor whiteColor];
+    pageViewController.selectedIndicatorColor = [UIColor orangeColor];
+    pageViewController.selectedTitleTextAttributes = @{
+        NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote],
+        NSForegroundColorAttributeName: [UIColor orangeColor]
+    };
     pageViewController.delegate = self;
     [self addChildViewController:_pageViewController = pageViewController];
     [self.view addSubview:pageViewController.view];

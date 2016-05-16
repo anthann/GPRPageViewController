@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GPRPageViewController"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "A pageViewController with a nice titleBar on the top."
 
 # This description is used to generate tags and improve search results.
