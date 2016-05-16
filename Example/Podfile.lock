@@ -1,5 +1,5 @@
 PODS:
-  - GPRPageViewController (0.1.0):
+  - GPRPageViewController (0.2.0):
     - Masonry (~> 1.0.0)
   - Masonry (1.0.0)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GPRPageViewController: 794df67a432fe2066d0a5650dd91e7d8f4540c8d
+  GPRPageViewController: 97822d53c8d3e4bef0cb6a96716ff33b9c181ed7
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
 
 COCOAPODS: 0.39.0

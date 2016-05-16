@@ -57,6 +57,7 @@ NSString * const titleCellReuseIdentifier = @"titleCellReuseIdentifier";
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
 //    collectionView.pagingEnabled = YES;
+    collectionView.scrollsToTop = NO;
     collectionView.alwaysBounceVertical = NO;
     collectionView.showsHorizontalScrollIndicator = NO;
     collectionView.showsVerticalScrollIndicator = NO;
